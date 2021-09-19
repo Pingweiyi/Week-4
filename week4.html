@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GAME CLUB</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="week4.css" type="text/css" />
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+	</head>
+	
+
+<body>
+
+<h2>GAME CLUB</h2>
+<p>Welcome to game club, which contains many popular games.</p>
+
+	
+	<div id="msg">
+		{{name}} {{welcome}}
+		{{inf}}
+	</div>
+
+<div class="searching">
+	<div class="input">
+			<input id="keyword" type="string"/>
+			<button class="buttonSearch" id="butn" onclick="search()"> Search </button>   
+	</div>
+	<strong><p id="output">	</p></strong>
+</div>
+
+<header>
+  <h2>Game Community</h2>
+</header>
+
+<div id="item">
+  <ol>
+    <li v-for="game item">
+      {{ item.text }}
+    </li>
+  </ol>
+</div>
+			
+<div id="announcement">
+	<span v-if="seen">Updated games today include: LOL and DOTA2</span>
+	<span v-else>Updated games today include:CS:GO and APEX Legends</span>
+</div>
+
+<section>
+  <nav>
+    <ul>
+		GAME Official Links<br><br>
+		<a href="https://lol.qq.com/act/a20210831guide/index.shtml?e_code=507042">LOL</a><br><br>
+		<a href="https://www.dota2.com.cn/">DOTA2</a><br><br>
+		<a href="https://www.ea.com/games/apex-legends?isLocalized=true">APEX Legends</a><br><br>
+		<a href="https://www.csgo.com.cn/">CS:GO</a><br><br>
+		<a href="https://store.steampowered.com/">STEAM</a><br><br>
+    </ul>
+  </nav>
+  
+  <article>
+	<div id="lol">
+    <h1>LOL</h1>
+    <p>League of Legends (LOL) is an online MOBA game developed by Riot Games in the US and operated by Tencent's game agency in China. The game has hundreds of character heroes and features such as a ranking system and rune system.</p>
+    </div>
+  </article>
+</section>
+
+<footer>
+  <p>In the gaming community. You can watch other people's posts, articles or videos and post comments under them. You can post articles to share your interesting things in the game. You can apply to the game team to find your game buddies.</p>
+</footer>
+<script src="./week4.js"></script>
+</body>
+</html>

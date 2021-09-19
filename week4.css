@@ -1,0 +1,83 @@
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+#lol{
+	  background-image: url(lol.jpg);
+	  background-size: 1500px 500px;
+	  background-repeat: no-repeat, repeat;
+	  
+	  
+	  padding: 50px;
+}
+
+input{
+	font-size: 15px;
+	width: 15%;
+	
+}
+
+button{
+	font-size: 15px;
+	color: crimson;
+	width: 5%;
+}
+
+
+/* Style the header */
+header {
+  background-color:black;
+  
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 10%;
+  height: 400px; /* only for demonstration, should be removed */
+  background: plum;;
+  
+  font-size: 20px;
+}
+
+
+
+article {
+  float: left;
+  padding: px;
+  width:50%;
+  background-color: whitesmoke;
+  height: 200px; /* only for demonstration, should be removed */
+  font-size: 15px;
+  color: crimson
+}
+
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Style the footer */
+footer {
+  background-color: papayawhip;
+  padding: 10px;
+  text-align: center;
+  color: deepskyblue;
+  
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 1000px) {
+  nav, article {
+    width: 50%;
+    height: auto;
+  }
+}
